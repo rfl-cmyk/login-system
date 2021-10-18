@@ -1,0 +1,68 @@
+.login ul {
+    list-style: none;
+}
+
+.login ul li {
+    float: left;
+    background-color: #cf773c;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.login ul li:hover {
+    background-color: rgb(243, 126, 47);
+}
+
+.login h1 {
+    margin-top: 22px;
+}
+
+form {
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fffde9;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(87, 43, 30);
+    font-weight: 300;
+    margin: 0;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0 0;
+    border: 0;
+    border-bottom: 1px dashed #000;
+    background-color: #fffde9;
+}
+
+input:focus, input:visited {
+    border-color: pink;
+}
+
+button {
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 35px auto 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    background-color: rgb(207, 119, 60);
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(243, 126, 47);
+}
