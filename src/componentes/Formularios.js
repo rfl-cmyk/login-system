@@ -9,33 +9,47 @@ export const Formularios = (props) => {
         setOption(opt)
     }
 
+    var contador = 0;
+
+    const show = () => {
+        if(contador % 2 === 0) {
+            document.getElementById('pass').type = "text"
+            contador ++;
+        } else {
+            document.getElementById('pass').type = "password"
+            contador ++;
+        }
+    }
+
     return(
         <div className="login">
             <ul>
                 <li onClick={() => aba('entrar')}>Login</li>
-                <li onClick={() => aba('cadastrar')}>Cadastrar-se</li>
+                <li onClick={() => aba('cadastrar')}>Register</li>
             </ul>
             {option === 'entrar' ?
                 <form method="post" onSubmit={props.validacao}>
                     <h1>.: Login :.</h1>
                     <div>
-                        <input type="text" required name="nome" placeholder="Nome:" />
+                        <input type="text" required name="nome" placeholder="Username:" />
                     </div>
                     <div>
-                        <input type="password" required name="senha" placeholder="Senha:" />
+                        <input id="pass" type="password" required name="senha" placeholder="Password:" />
+                        <p onClick={() => show()} >&#128065;</p>
                     </div>
-                    <button type="submit">Entrar</button>
+                    <button type="submit">Enter</button>
                 </form>
             :
                 <form method="post" onSubmit={props.addUsuario}>
-                    <h1>.: Cadastrar-se :.</h1>
+                    <h1>.: Register :.</h1>
                     <div>
-                        <input type="text" required name="nome" placeholder="Nome:" />
+                        <input type="text" required name="nome" placeholder="Username:" />
                     </div>
                     <div>
-                        <input type="password" required name="senha" placeholder="Senha:" />
+                        <input id="pass" type="password" required name="senha" placeholder="Password:" />
+                        <p onClick={() => show()} >&#128065;</p>
                     </div>
-                    <button type="submit">Cadastrar-se</button>
+                    <button type="submit">Register</button>
                 </form>
             }
         </div>

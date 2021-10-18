@@ -20,7 +20,7 @@ function App() {
       setLogado(evento.target[0].value)
       localStorage.setItem('valida', true)
     } else {
-      alert('Usuário e/ou senha inválido(s).')
+      alert('Invalid username and/or password.')
     }
   }
 
@@ -36,12 +36,12 @@ function App() {
       evento.target[0].value = ''
       evento.target[1].value = ''
       localStorage.setItem('valida', true)
-      alert('Usuário cadastrado com sucesso!')
+      alert('User registered successfully!')
     }
   }
 
   const logout = () => {
-    if(window.confirm("Tem certeza que deseja sair?")) {
+    if(window.confirm("Are you sure you want to quit?")) {
       localStorage.removeItem('valida')
       setLogado(false)
     }

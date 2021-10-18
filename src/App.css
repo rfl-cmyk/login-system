@@ -18,7 +18,9 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(155, 133, 103);
+  background-image: url('./imagens/coffee.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .App-logo {
@@ -54,4 +56,19 @@ code {
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  text-align: center;
+  color: rgb(87, 43, 30);
+  font-weight: 300;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(87, 43, 30);
+  font-weight: 400;
+  margin: 0;
+  padding: 0 10px;
 }

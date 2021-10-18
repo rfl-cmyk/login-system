@@ -22,17 +22,10 @@
 }
 
 form {
-    width: 300px;
+    width: 245px;
     padding: 30px;
     border-radius: 10px;
-    background-color: #fffde9;
-}
-
-h1 {
-    text-align: center;
-    color: rgb(87, 43, 30);
-    font-weight: 300;
-    margin: 0;
+    background-color: rgba(255, 253, 233, 0.8);
 }
 
 input {
@@ -42,11 +35,18 @@ input {
     margin: 20px 0 0;
     border: 0;
     border-bottom: 1px dashed #000;
-    background-color: #fffde9;
+    background-color: transparent;
 }
 
-input:focus, input:visited {
-    border-color: pink;
+input:focus {
+    outline: 0;
+}
+
+form p {
+    position: relative;
+    float: right;
+    margin-top: -28px;
+    cursor: pointer;
 }
 
 button {
